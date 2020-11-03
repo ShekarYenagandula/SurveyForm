@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FCC:Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+	<h1 id="title">freeCodeCamp Survey Form</h1>
+	<p id="description">Thank you for taking the time to help us improve the platform</p>
+	
+	<form id="survey-form">
+		<label id="name-label">Name</label><br>
+		<input type="text" id="name" placeholder="Enter your name" required><br>
+		<label id="email-label">Email</label><br>
+		<input id="email" placeholder="Enter your Email" type="email"><br>
+		<label id="number-label">Age(optional)</label><br>
+		<input id="number" type="number" placeholder="Age" min="10" max="55"><br>
+
+		<label id="current-role">Which option best describes your current role?</label><br>
+		<select id="dropdown" placeholder="Select current role" ><br>
+		  <option value="empty" disabled selected="selected">Select an option</option>
+		  <option value="student">student</option>
+		  <option value="job">Full Time Job</option>
+		  <option value="learner">Full Time Learner</option>
+		  <option value="notsay">Prefer not to say</option>
+		  <option value="other">Other</option>
+		</select><br>
+
+		<label id="recommend">Would you recommend freeCodeCamp to a friend?</label><br>
+		<div id="radiogroup">
+		<label for="name">
+			<input id="betweenoptions" type="radio" name="name">Definitely
+		</label><br>
+		<label for="name">
+			<input id="betweenoptions" type="radio" name="name">Maybe
+		</label><br>
+		<label for="name">
+			<input id="betweenoptions" type="radio" name="name">Not sure
+		</label><br>
+		</div>
+
+		<label id="feature">What is your favorite feature of freeCodeCamp?</label><br>
+		<select id="dropdown" placeholder="Select current role" >
+		  <option value="empty" disabled selected="selected">Select an option</option>
+		  <option value="student">student</option>
+		  <option value="job">Full Time Job</option>
+		  <option value="learner">Full Time Learner</option>
+		  <option value="notsay">Prefer not to say</option>
+		  <option value="other">Other</option>
+		</select><br>
+
+		<label id=imprv>What would you like to see improved? (Check all that apply)</label><br>
+		<div id="checkboxgroup">
+		<label  for="vehicle1">
+			<input id='betweenoptions' type="checkbox" id="impro1" value="Front">
+		Front-end Projects</label><br>
+		<label  for="vehicle1">
+			<input id='betweenoptions' type="checkbox" id="impro2" value="Back">
+		Back-end Projects</label><br>
+		<label  for="vehicle1">
+			<input id='betweenoptions' type="checkbox" id="impro3" value="Data">
+		Data Visualization</label><br>
+		<label  for="vehicle2">
+			<input id='betweenoptions' type="checkbox" id="impro4" value="Challenges">
+		Challenges</label><br>
+		<label  for="vehicle3">
+			<input id='betweenoptions' type="checkbox" id="impro5" value="Gitter">
+		Gitter help rooms</label><br>
+		</div>
+
+		<label id="suggest">Any comments or suggestions?</label><br>
+		<textarea id="comment" id="textarea" name="story"
+          rows="5" cols="80" placeholder="Enter your comment here..."></textarea><br>
+
+
+		<button id="submit">Submit</button><br>
+	</form>
+
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>

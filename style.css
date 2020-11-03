@@ -1,0 +1,98 @@
+body{
+	background: url("https://previews.123rf.com/images/arlatis/arlatis1505/arlatis150500002/40602435-abstract-watercolor-portrait-summer-rain-background-isolated-on-white-vector-illustration.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 700px;
+	margin:0 auto;
+	font-size: 1.5vw;
+	font-family: "Open Sans"
+}
+#title{
+	text-align: center;
+}
+#description{
+	text-align: center;
+	font-style: italic;
+}
+#survey-form{
+	padding: 50px;
+	border-radius: 10px;
+	background-color: rgba(75, 0, 130,0.9);
+	opacity: 0.9;
+	color: white;
+}
+#name,#email,#number,#dropdown,#radiogroup,#checkboxgroup,#comment,#submit{
+	margin-top: .8rem;
+	margin-bottom: 2rem; 
+	width: 100%;
+	padding:3px 0 3px 5px;
+	min-height: 2.2vw;
+	font-size: 1.3vw;
+}
+input[type=radio],input[type=checkbox] {
+    border: 0px;
+    width: 2vw;
+    height: 2vw;
+}
+#betweenoptions{
+	margin-bottom: 20px;
+}
+#comment{
+	padding: 15px;
+	font-size: 1.6vw;
+}
+#submit{
+	font-size: 1.5vw;
+	padding: 5px;
+	background-color: green;
+	color: white;
+}
+::placeholder {
+  color: #222222;
+  font-size: 1.3vw;
+}
+
+
+@media (max-width: 992px) and (min-width: 601px){
+	body{
+		width: 100%;
+		font-size:2.2vw;
+	}
+	::placeholder {
+	  color: #222222;
+	  font-size: 0.9em;
+	}
+	#name,#email,#number,#dropdown,#radiogroup,#checkboxgroup,#comment,#submit{
+		font-size: 2vw;
+		padding: 10px;
+	}
+	#dropdown{
+		padding: 15px;
+	}
+}
+@media only screen and (max-width: 600px){
+	body{
+		width: 100%;
+		font-size:20px;
+	}
+	::placeholder {
+	  color: #222222;
+	  font-size: 20px;
+	}
+	#name,#email,#number,#dropdown,#radiogroup,#checkboxgroup,#comment,#submit{
+		font-size: 20px;
+		width: 90%;
+	}
+	#survey-form{
+		padding: 30px 10px;
+	}
+	#dropdown{
+		font-size:6vw;
+	}
+	#name-label,#email-label,#number-label,#current-role,#recommend,#feature,#imprv,#suggest{
+		font-size: 6vw;
+	}
+	#submit{
+		margin: 10px;
+	}
+}
